@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+
+/* HEADER */
+
+header{
+    background:white;
+    height:70px;
+    display:flex;
+    align-items:center;
+    padding:0 30px;
+    border-bottom:1px solid #e6e6e6;
+}
+
+.header-inner{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo{
+    height:36px;
+}
+
+.company-name{
+    font-size:20px;
+    font-weight:600;
+    color:#333;
+}
+
+/* MAIN */
+
+main{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+/* FORM */
+
+.form-box{
+    background:white;
+    padding:40px 50px;
+    border-radius:8px;
+    max-width:480px;
+    width:100%;
+    text-align:center;
+    box-shadow:0 6px 20px rgba(0,0,0,0.08);
+}
+
+.form-title{
+    font-size:20px;
+    margin-bottom:14px;
+    line-height:1.4;
+}
+
+.form-subtitle{
+    font-size:13px;
+    color:#666;
+    margin-bottom:28px;
+}
+
+/* INPUT */
+
+.input-group{
+    margin-bottom:25px;
+}
+
+.input-group input{
+    width:100%;
+    padding:14px 12px;
+    font-size:16px;
+    border:none;
+    border-bottom:2px solid #dadce0;
+    outline:none;
+    transition:0.2s;
+}
+
+.input-group input:focus{
+    border-bottom:2px solid #1a73e8;
+}
+
+/* BUTTON */
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:6px;
+    background:#1a73e8;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+button:hover{
+    background:#1666d1;
+}
+
+button:disabled{
+    opacity:0.7;
+    cursor:not-allowed;
+}
+
+/* MESSAGE */
+
+#formMessage{
+    margin-top:15px;
+    font-size:14px;
+}

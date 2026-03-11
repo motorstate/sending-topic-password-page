@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotorState</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <img src="logo.png" class="logo" alt="MotorState">
+            <div class="company-name">MotorState</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-box">
+            <h1 class="form-title" data-i18n="title"></h1>
+            <div class="form-subtitle" data-i18n="subtitle"></div>
+                <form id="emailForm">
+
+                    <div class="input-group">
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            data-i18n-placeholder="email_placeholder"
+                            required>
+                    </div>
+                    <button type="submit" id="submitButton" data-i18n="button"></button>
+                </form>
+
+            <div id="formMessage"></div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
