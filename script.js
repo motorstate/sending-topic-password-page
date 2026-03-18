@@ -27,7 +27,7 @@ button: "Получить пароль",
 
 sending: "Отправка...",
 
-success: "Пароль отправлен на вашу почту",
+success: "Пароль отправлен на вашу почту. Возможно письмо в папке Спам",
 
 error: "Неверный адрес электронной почты",
 
@@ -49,7 +49,7 @@ button: "Get password",
 
 sending: "Sending...",
 
-success: "Password sent to your email",
+success: "Password sent to your email. The email may be in your Spam folder",
 
 error: "Incorrect email address",
 
