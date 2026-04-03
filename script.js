@@ -125,7 +125,7 @@ document.getElementById("emailForm").addEventListener("submit", async function(e
 
 /* URL webhook n8n */
 
-    const webhookUrl = "https://motorstate.app.n8n.cloud/webhook/get-password"; //https://motorstate.app.n8n.cloud/webhook-test/get-password
+    const webhookUrl = "https://n8.motorstate.com.ua/webhook/get-password"; //https://motorstate.app.n8n.cloud/webhook-test/get-password
 
 
     try{
