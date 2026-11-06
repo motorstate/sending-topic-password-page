@@ -1,43 +1,27 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<!-- Старая страница выдачи паролей (motorstate.github.io/sending-topic-password-page) после
+     перехода: перенаправляет на pass.motorstate.com.ua, сохраняя тему и язык. Ключ вебхука
+     (token) из адреса не передаётся никуда. Заменить этим файлом index.html в репозитории
+     sending-topic-password-page; script.js и styles.css можно удалить. -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
     <title>MotorState</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <header>
-        <div class="header-inner">
-            <img src="logo.png" class="logo" alt="MotorState">
-            <div class="company-name">MotorState</div>
-        </div>
-    </header>
-
-    <main>
-        <div class="form-box">
-            <h1 class="form-title" data-i18n="title"></h1>
-            <div class="form-subtitle" data-i18n="subtitle"></div>
-                <form id="emailForm">
-
-                    <div class="input-group">
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            data-i18n-placeholder="email_placeholder"
-                            required>
-                    </div>
-                    <button type="submit" id="submitButton" data-i18n="button"></button>
-                </form>
-
-            <div id="formMessage"></div>
-
-        </div>
-    </main>
-
-    <script src="script.js"></script>
-
-</body>
+    <script>
+      ;(function () {
+        var params = new URLSearchParams(location.search)
+        var topic = params.get('topic') || ''
+        var lang = (params.get('lang') || '').toLowerCase()
+        var target = 'https://pass.motorstate.com.ua/'
+        if (/^[A-Za-z0-9-]{4,64}$/.test(topic)) target += 'g/' + topic
+        if (['en', 'ru', 'uk'].indexOf(lang) >= 0) target += '?lang=' + lang
+        location.replace(target)
+      })()
+    </script>
+  </head>
+  <body>
+    <p><a href="https://pass.motorstate.com.ua/">pass.motorstate.com.ua</a></p>
+  </body>
 </html>
